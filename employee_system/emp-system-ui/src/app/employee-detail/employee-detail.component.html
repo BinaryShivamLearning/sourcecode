@@ -1,0 +1,39 @@
+
+<nav>
+   <div style="margin-top: 50px;">
+        <div class="form-div">
+        <div style="font-family: Arial;font-weight: lighter;">
+                <div style="margin: 30px;">
+                    <h2 style="font-weight: lighter;">Add New Employee</h2>
+                    <div style="display: grid;margin-bottom: 20px;">
+                        <label >First name</label>
+                        <input type="text" id="firstName" 
+                        style="height: 40px;width: 400px;font-size: larger; padding-left: 10px;"
+                        required
+                        [(ngModel)]="firstName"
+                        >
+                    </div>
+                    <div style="display: grid;margin-bottom: 20px;">
+                        <label >Last name</label>
+                        <input type="text" id="lastName" 
+                        style="height: 40px;width: 400px;font-size: larger;padding-left: 10px;"
+                        required
+                        [(ngModel)]="lastName">
+                    </div>
+                    <div style="display: grid;margin-bottom: 20px;">
+                        <label >Email</label>
+                        <input type="email" id="email" 
+                        style="height: 40px;width: 400px;font-size: larger;padding-left: 10px;"
+                        [(ngModel)]="email">
+                    </div>
+                    <div>
+                        <button class="button save" (click)="addEmployee()">Save</button>
+                        <button class="button clear" (click)="clear()">Clear</button> 
+                        <button class="button cancel" (click)="cancel()">Cancel</button> 
+                    </div>
+                </div>
+        </div>
+        </div>
+   </div>
+
+</nav>
